@@ -3,14 +3,18 @@
 .call-to-action {
   margin-top: 2em;
   @media screen and (min-width: 1024px) {
-    & p:nth-child(1) {
-      margin-left: 2em;
-    }
-    & p:nth-child(2) {
-      margin-left: 4em;
-    }
-    & p:nth-child(3) {
-      margin-left: 6em;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2rem;
+    // & p:nth-child(1) {
+    //   margin-left: 2em;
+    // }
+    // & p:nth-child(2) {
+    //   margin-left: 4em;
+    // }
+    // & p:nth-child(3) {
+    //   margin-left: 6em;
+    // }
   }
 }

@@ -16,4 +16,5 @@ organ. His later works contain some of the most deeply introspective and
 poignant writing of the 19th century, and this set is no exception.
 
 We'll hear from this collection the lovely setting of _Lo, How a Rose E'er
-Blooming_, which—while reflective—also feels quite contended.
+Blooming_, which—while reflective—also feels quite contended. The chorale melody
+(tune) is highly ornamented by Brahms, so don't worry if you can't pick it out!

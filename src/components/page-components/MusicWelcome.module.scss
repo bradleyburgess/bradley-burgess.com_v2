@@ -1,0 +1,31 @@
+@import "../../css/variables";
+
+.arrow {
+  position: relative;
+  margin-left: 20px;
+  width: 80px;
+  transform: rotate(0deg);
+  path {
+    fill: $gray7;
+  }
+}
+
+.welcome-text-container {
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
+}
+
+.text {
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: relative;
+  top: 53px;
+  max-width: 300px;
+  margin-left: 1rem;
+  // margin-top: 2rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.25;
+  color: $gray8;
+}

@@ -1,0 +1,88 @@
+@import "../css/variables";
+
+// local variables
+$spacing: 2rem;
+
+.root {
+  width: 400px;
+  // position: fixed;
+  padding: $top-padding 5rem;
+  background-color: $page-bg;
+  &::after {
+    content: "";
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      top: 6rem;
+      right: 0;
+      height: calc(800px - 16rem);
+      width: 2px;
+      border-radius: 2px;
+
+      // Gradient from Figma:
+      // background: linear-gradient(
+      //   180deg,
+      //   #dfdfdf 0%,
+      //   rgba(227, 227, 227, 0) 100%
+      // );
+
+      // Gradient from Lumen:
+      background: linear-gradient(180deg, #e6e6e6 0, #e6e6e6 48%, #fff);
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 1000%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    z-index: 100;
+    overflow: hidden;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out, left 0s 0.15s;
+    &-active {
+      left: 0;
+      opacity: 1;
+      transition: opacity 0.15s ease-in-out;
+    }
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: $gray9;
+}
+
+.subheading {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: $gray7;
+  font-size: 20px;
+}
+
+.nav-list {
+  margin-top: $spacing;
+  margin-bottom: $spacing;
+}
+
+.copyright {
+  margin-top: $spacing;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: $gray6;
+}

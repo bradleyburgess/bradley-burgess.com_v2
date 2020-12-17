@@ -1,0 +1,39 @@
+@import "../css/variables";
+
+.button {
+  box-sizing: content-box;
+  display: inline-block;
+  padding: 0.25em 0.85em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 29px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  transition: $standard-transition;
+}
+
+.default {
+  color: $white;
+  border-color: $gray8;
+  background-color: $gray8;
+  &:hover {
+    color: $gray8;
+    background-color: $white;
+  }
+}
+
+.inline {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+.disabled {
+  background-color: $gray4;
+  color: $white;
+  border-color: $gray4;
+}

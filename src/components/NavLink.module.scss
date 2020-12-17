@@ -1,0 +1,59 @@
+@import "../css/variables";
+
+.menu-item {
+  color: $gray8;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  list-style-type: none;
+  & + .menu-item {
+    margin-top: 5px;
+  }
+}
+
+.menu-link {
+  position: relative;
+  transition: $standard-transition;
+  color: inherit;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 103%;
+    left: 2px;
+    height: 2px;
+    width: 0;
+    background-color: $blue;
+    border-radius: 1px;
+    transition: $standard-transition;
+    transition-duration: 0.2s;
+  }
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+    &::after {
+      width: calc(100% - 4px);
+    }
+  }
+}
+
+.coming-soon {
+  color: $gray5;
+}
+
+.new {
+  color: $red;
+}
+
+.status {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.current {
+  transition: $standard-transition;
+  color: $blue;
+  &:hover::after {
+    height: 0px;
+    width: 0px;
+  }
+}

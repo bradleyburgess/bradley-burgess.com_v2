@@ -1,0 +1,13 @@
+@import "./variables";
+
+.nav-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  a,
+  span {
+    margin-bottom: 1.5rem;
+  }
+  @media screen and (max-width: 1023px) {
+    padding: 0 1em;
+  }
+}

@@ -1,0 +1,65 @@
+@import "../css//variables";
+
+.list {
+  font-size: 1.5rem;
+}
+
+.list-item {
+  display: inline-block;
+  & + .list-item {
+    margin-left: 10px;
+  }
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  text-align: center;
+  border: 2px solid $gray8;
+  border-radius: 50%;
+  color: $gray8;
+  transition: $standard-transition;
+  &:hover {
+    color: white;
+  }
+}
+
+.Twitter {
+  &:hover {
+    background-color: #1da1f2;
+    border-color: #1da1f2;
+  }
+}
+
+.Instagram {
+  &:hover {
+    background-color: #833ab4;
+    border-color: #833ab4;
+  }
+}
+
+.YouTube {
+  &:hover {
+    background-color: #ff0000;
+    border-color: #ff0000;
+  }
+}
+
+.GitHub {
+  &:hover {
+    background-color: #212121;
+    border-color: #212121;
+  }
+}
+
+.SoundCloud {
+  &:hover {
+    background-color: #fe5000;
+    border-color: #fe5000;
+  }
+}

@@ -1,0 +1,15 @@
+@import "./variables";
+
+.arrow {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: initial;
+    position: relative;
+    top: -20px;
+    width: 80px;
+    transform: rotate(290deg);
+    path {
+      fill: $gray7;
+    }
+  }
+}

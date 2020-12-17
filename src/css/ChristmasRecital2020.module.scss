@@ -1,0 +1,74 @@
+@import "./variables";
+
+.nav-container {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.next-button {
+  float: right;
+}
+
+.prev-button {
+  float: left;
+}
+
+.list {
+  color: $blue;
+  margin-top: 2rem;
+  padding-left: 1em;
+  @media screen and (max-width: 1023px) {
+    padding-left: 2em;
+  }
+}
+
+.list-item {
+  position: relative;
+  padding-left: 1em;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.5em;
+  // list-style-type: none;
+  line-height: 1.5;
+  text-indent: -1em;
+  font-size: 1.25em;
+  transition: $standard-transition;
+  &:hover {
+    color: $blue;
+    cursor: pointer;
+  }
+  &-selected {
+    color: $blue;
+    // text-decoration: underline;
+    &::before {
+      content: "\003E";
+      position: absolute;
+      font-weight: bold;
+    }
+  }
+}
+
+.piece-title {
+  margin-bottom: 0.25em;
+  font-size: 1.75em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.piece-composer {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+.program-note {
+  p {
+    font-size: 1.25em;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+    color: $gray6;
+    margin-top: 1rem;
+  }
+  blockquote {
+    padding-left: 2rem;
+  }
+}

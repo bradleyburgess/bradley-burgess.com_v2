@@ -35,9 +35,7 @@ export default function AboutPage() {
         </P>
         <P>
           I currently serve as Associate Director of Music & Worship Arts at{" "}
-          <a href="http://esumc.org">
-            Edenton Street United Methodist Church
-          </a>{" "}
+          <a href="http://esumc.org">Edenton Street United Methodist Church</a>{" "}
           in Raleigh, NC.
         </P>
         <div className={styles.callToAction}>
@@ -71,6 +69,10 @@ export default function AboutPage() {
         <P>
           I run Linux exclusively at home (currently Debian Buster), and almost
           always code in NeoVim with COC.
+        </P>
+        <P>
+          For music notation, I use the wonderfully powerful (and open-source){" "}
+          <a href="https://lilypond.org/">LilyPond</a>
         </P>
         {/* <div className={styles.callToAction}> */}
         {/*   <FlowText> */}

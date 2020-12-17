@@ -53,7 +53,15 @@ const Index = ({ data, img }) => {
       </P>
       <P>
         You can listen to the program one item at a time with notes by clicking
-        the <Button noHover to="#" style={{ fontSize: 14, margin: '0 0.75em' }}>next</Button> buttons, or you can find the{" "}
+        the{" "}
+        <Button
+          noHover
+          to="#"
+          style={{ fontSize: 14, marginLeft: "0.75em", marginRight: "0,75em" }}
+        >
+          next
+        </Button>{" "}
+        buttons, or you can find the{" "}
         <a href="https://www.youtube.com/watch?v=FayQsx2IjQU&list=PLxwU2G1FQnyRWKgNbXSBvGZskXH_L3y-A">
           music-only playlist on my YouTube Channel
         </a>

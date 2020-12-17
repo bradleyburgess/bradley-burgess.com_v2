@@ -1,5 +1,5 @@
 ---
-title: 'Toccatina on ‘Angels We Have Heard On High'
+title: 'Toccatina on ‘Angels We Have Heard On High’'
 composer: 'Richard Elliott'
 slug: 'elliott-toccatina-angels'
 order: 1

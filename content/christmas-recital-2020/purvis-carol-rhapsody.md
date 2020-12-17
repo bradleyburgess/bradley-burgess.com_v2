@@ -15,6 +15,6 @@ His composition style was greatly influenced by the cathedral's magnificent
 and the expressive, lush recordings he made on the instrument influenced a
 generation of American organists.
 
-This piece takes us through several well-loved carols, beginning with a lush and
-expressive _Silent Night_, followed by a playful scherzo on _Hark! the Herald
+This piece takes us through several well-loved carols, beginning with a warm and
+poignant _Silent Night_, followed by a playful scherzo on _Hark! the Herald
 Angels Sing_, and ending with a rousing toccata on _O Come, All Ye Faithful_.

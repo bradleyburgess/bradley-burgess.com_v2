@@ -6,10 +6,12 @@ order: 3
 videoUrl: 'https://www.youtube.com/embed/G0PbQc3h8y4'
 ---
 
-Next we have Bach's wonderful _Fantasia on In dulci jubilo_, which has been a
-staple Christmas Eve postlude for many organists around the world. In the
-English-speaking world, we most often sing this tune with the famous translation
-by John Mason Neale:
+We go back in time, now, to one of the real classics of the Christmas organ
+repertoire: Bach's wonderful _Fantasia on "In dulci jubilo"_, which has been a
+staple Christmas Eve postlude for many organists around the world.
+
+In the English-speaking world, we most often sing this tune with the famous
+translation by John Mason Neale:
 
 > Good Christian men, rejoice  
 > With heart, and soul, and voice;  

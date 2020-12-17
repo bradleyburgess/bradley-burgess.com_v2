@@ -12,13 +12,13 @@ const menu = [
   {
     title: "blog",
     slug: "/blog",
-    status: "active",
+    status: "coming-soon",
   },
-  {
-    title: "contact",
-    slug: "/contact",
-    status: "active",
-  },
+  // {
+  //   title: "contact",
+  //   slug: "/contact",
+  //   status: "active",
+  // },
   {
     title: "portfolio",
     slug: "/portfolio",

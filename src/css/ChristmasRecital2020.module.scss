@@ -72,3 +72,14 @@
     padding-left: 2rem;
   }
 }
+
+.graphic {
+  margin-bottom: 1rem;
+  @media screen and (min-width: 1024px) {
+    width: 200px;
+    float: right;
+    bottom: 20px;
+    clear: both;
+    margin: 0 0 1rem 2rem;
+  }
+}

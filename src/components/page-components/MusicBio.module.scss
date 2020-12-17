@@ -1,0 +1,10 @@
+@import "../../css/variables";
+
+.headshot {
+  margin: 1rem;
+  @media screen and (min-width: 1024px) {
+    float: left;
+    width: 200px;
+    margin: 0 1em 1em 0;
+  }
+}

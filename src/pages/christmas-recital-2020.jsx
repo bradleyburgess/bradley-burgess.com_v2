@@ -1,6 +1,7 @@
 import React from "react"
 import { Router } from "@reach/router"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/Button"
@@ -10,51 +11,6 @@ import Section from "../components/Section"
 import YoutubeEmbed from "../components/YoutubeEmbed"
 import styles from "../css/ChristmasRecital2020.module.scss"
 
-const indivRecitalItems = [
-  {
-    title: "Carol Rhapsody",
-    composer: "Richard Purvis",
-    slug: "purvis-carol-rhapsody",
-    url: "#",
-  },
-  {
-    title: "In dulci jubilo, BWV 729",
-    composer: "Johann Sebastian Bach",
-    slug: "bach-in-dulci-jubilo",
-    url: "#",
-  },
-  {
-    title: "Es ist ein Ros entsprungen",
-    composer: "Johannes Brahms",
-    slug: "brahms-es-ist-ein-ros",
-    url: "#",
-  },
-  {
-    title: "Toccatina on ‘Angels We Have Heard On High’",
-    composer: "Richard Elliott",
-    slug: "elliott-toccatina-angels",
-    url: "#",
-  },
-  {
-    title: "Prelude on ‘Greensleeves’",
-    composer: "Richard Purvis",
-    slug: "purvis-greensleeves",
-    url: "#",
-  },
-  {
-    title: "Toccata on ‘Veni Emmanuel’",
-    composer: "Andrew Carter",
-    slug: "carter-toccata-veni-emmanuel",
-    url: "#",
-  },
-  {
-    title: "Two Settings of ‘Joy to the World’",
-    composer: "Jacob Weber",
-    slug: "weber-joy-to-the-world",
-    url: "#",
-  },
-]
-
 export default function ChristmasRecital2020({ data }) {
   const { edges } = data.allMarkdownRemark
   return (
@@ -62,7 +18,11 @@ export default function ChristmasRecital2020({ data }) {
       <SEO title="Christmas Recital 2020" />
       <Heading>Christmas Recital 2020</Heading>
       <Router>
-        <Index data={edges} path="/christmas-recital-2020" />
+        <Index
+          img={data.file.childImageSharp.fluid}
+          data={edges}
+          path="/christmas-recital-2020"
+        />
         {edges.map((item, index, array) => (
           <RecitalItem
             key={item.node.frontmatter.slug}
@@ -77,9 +37,11 @@ export default function ChristmasRecital2020({ data }) {
   )
 }
 
-const Index = ({ data }) => {
+const Index = ({ data, img }) => {
+  console.log(data)
   return (
     <Section>
+      <Img fluid={img} className={styles.graphic} />
       <P>
         Welcome to my 2020 Christmas Recital! There is such a breadth of
         wonderful music that has been written over the ages for the Advent and
@@ -90,14 +52,14 @@ const Index = ({ data }) => {
         all based on familiar carols.
       </P>
       <P>
-        You can listen to the program one item at a time with notes, or you can
-        find the{" "}
+        You can listen to the program one item at a time with notes by clicking
+        the <Button noHover to="#" style={{ fontSize: 14, margin: '0 0.75em' }}>next</Button> buttons, or you can find the{" "}
         <a href="https://www.youtube.com/watch?v=FayQsx2IjQU&list=PLxwU2G1FQnyRWKgNbXSBvGZskXH_L3y-A">
           music-only playlist on my YouTube Channel
         </a>
         .
       </P>
-      <h2>Program</h2>
+      <h2 style={{ clear: "both" }}>Program</h2>
       <ol className={styles.list}>
         {data.map((item, index) => (
           <li key={item.node.frontmatter.slug} className={styles.listItem}>
@@ -168,6 +130,13 @@ export const christmasRecital2020Query = graphql`
             videoUrl
           }
           html
+        }
+      }
+    }
+    file(relativePath: { eq: "bradley-christmas-recital.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }

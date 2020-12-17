@@ -36,13 +36,13 @@ export default function AboutPage() {
         </P>
         <div className={styles.callToAction}>
           <FlowText>
-            <Button inline to="/">
+            <Button inline to="/music/bio">
               read
             </Button>{" "}
             full bio
           </FlowText>
           <FlowText>
-            <Button inline to="/">
+            <Button inline to="/music">
               explore
             </Button>{" "}
             my music

@@ -8,6 +8,8 @@ import Section from "../components/Section"
 import SEO from "../components/seo"
 import Welcome from "../components/page-components/MusicWelcome"
 import Video from "../components/page-components/MusicVideo"
+import Bio from "../components/page-components/MusicBio"
+import Audio from "../components/page-components/MusicAudio"
 import styles from "../css/MusicPage.module.scss"
 
 const buttonList = [
@@ -40,6 +42,8 @@ export default function MusicPage({ location }) {
       <Router>
         <Welcome path="/music" />
         <Video path="/music/video" />
+        <Audio path="/music/audio" />
+        <Bio path="/music/bio" />
       </Router>
     </Layout>
   )

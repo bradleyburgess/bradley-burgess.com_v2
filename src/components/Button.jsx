@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import classNames from "classnames"
 import styles from "./Button.module.scss"
 
-const Button = ({ active, children, to, inline, marginRight, disabled }) => {
+const Button = ({ noHover, active, style, children, to, inline, marginRight, disabled }) => {
   if (!to || disabled) {
     return (
       <span
@@ -16,7 +16,7 @@ const Button = ({ active, children, to, inline, marginRight, disabled }) => {
           },
           { [styles.default]: !disabled && !active }
         )}
-        style={{ marginRight }}
+        style={{ ...style, marginRight }}
       >
         {children}
       </span>
@@ -28,9 +28,10 @@ const Button = ({ active, children, to, inline, marginRight, disabled }) => {
       className={classNames(
         styles.button,
         { [styles.inline]: inline },
-        { [styles.default]: !disabled && !active }
+        { [styles.default]: !disabled && !active },
+        { [styles.active]: active }
       )}
-      style={{ marginRight }}
+      style={{ ...style, marginRight }}
     >
       {children}
     </Link>
@@ -40,9 +41,10 @@ const Button = ({ active, children, to, inline, marginRight, disabled }) => {
       className={classNames(
         styles.button,
         { [styles.inline]: inline },
-        { [styles.default]: !disabled && !active }
+        { [styles.default]: !disabled && !active },
+        { [styles.active]: active }
       )}
-      style={{ marginRight }}
+      style={{ ...style, marginRight }}
     >
       {children}
     </a>

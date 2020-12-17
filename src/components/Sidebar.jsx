@@ -26,7 +26,7 @@ const Sidebar = ({ onMenuItemClick, active }) => {
       id="sidebar"
       className={classNames(styles.root, { [styles.rootActive]: active })}
     >
-      <Link to="/" style={{ textAlign: "center" }}>
+      <Link to="/" onClick={onMenuItemClick} style={{ textAlign: "center" }}>
         <Img
           className={styles.avatar}
           fixed={data.file.childImageSharp.fixed}
@@ -52,7 +52,7 @@ const Sidebar = ({ onMenuItemClick, active }) => {
 Sidebar.propTypes = {
   siteTitle: PropTypes.string,
   active: PropTypes.bool,
-  onMenuItemClick: PropTypes.func
+  onMenuItemClick: PropTypes.func,
 }
 
 Sidebar.defaultProps = {

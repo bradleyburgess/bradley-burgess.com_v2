@@ -25,7 +25,6 @@ const MusicBio = () => {
     }
   `)
 
-  console.log(data)
   return (
     <Section>
       <SubHeading>Full music bio</SubHeading>

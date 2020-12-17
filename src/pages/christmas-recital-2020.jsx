@@ -38,7 +38,6 @@ export default function ChristmasRecital2020({ data }) {
 }
 
 const Index = ({ data, img }) => {
-  console.log(data)
   return (
     <Section>
       <Img fluid={img} className={styles.graphic} />

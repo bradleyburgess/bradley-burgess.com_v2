@@ -66,20 +66,20 @@ export default function AboutPage() {
           I run Linux exclusively at home (currently Debian Buster), and almost
           always code in NeoVim with COC.
         </P>
-        <div className={styles.callToAction}>
-          <FlowText>
-            <Button inline to="/">
-              read
-            </Button>{" "}
-            my blog
-          </FlowText>
-          <FlowText>
-            <Button inline to="/">
-              see
-            </Button>{" "}
-            my work
-          </FlowText>
-        </div>
+        {/* <div className={styles.callToAction}> */}
+        {/*   <FlowText> */}
+        {/*     <Button inline to="/"> */}
+        {/*       read */}
+        {/*     </Button>{" "} */}
+        {/*     my blog */}
+        {/*   </FlowText> */}
+        {/*   <FlowText> */}
+        {/*     <Button inline to="/"> */}
+        {/*       see */}
+        {/*     </Button>{" "} */}
+        {/*     my work */}
+        {/*   </FlowText> */}
+        {/* </div> */}
       </Section>
     </Layout>
   )

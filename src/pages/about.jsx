@@ -18,21 +18,27 @@ export default function AboutPage() {
         <SubHeading>I’m a pianist & organist.</SubHeading>
         <P>
           I love the piano and its repertoire, and I love performing. I
-          especially love the music of Beethoven, Brahms, and Liszt: Beethoven
+          especially enjoy the music of Beethoven, Brahms, and Liszt: Beethoven
           because of his unparalleled marriage of form and feeling; Brahms
           because he picked up where Beethoven left off; and Liszt because he
-          was such an enigma — priest, showman, visionary, poet, virtuoso. I
-          adore Bach too, but I mainly spend time with him when I’m at the
-          organ.
+          was such an enigma — priest, showman, visionary, poet, virtuoso.
+        </P>
+        <P>
+          I revere Bach, but I mainly spend time with him when I’m at the organ.
         </P>
         <P>
           Perhaps it’s because I love things with keyboards, but after two
           degrees in piano performance I decided that I needed a third degree —
           in organ performance. (Why have one keyboard when five will do?). As
           an organist, I’ve given recitals, worked in churches, conducted
-          choirs, and composed / arranged some of my own music. I currently
-          serve as Associate Director of Music & Worship Arts at Edenton Street
-          United Methodist Church in Raleigh, NC.
+          choirs, and composed / arranged some of my own music.
+        </P>
+        <P>
+          I currently serve as Associate Director of Music & Worship Arts at{" "}
+          <a href="http://esumc.org">
+            Edenton Street United Methodist Church
+          </a>{" "}
+          in Raleigh, NC.
         </P>
         <div className={styles.callToAction}>
           <FlowText>

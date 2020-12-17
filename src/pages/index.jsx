@@ -33,6 +33,9 @@ const IndexPage = ({ data }) => {
         <FlowText>
           <Button to="/music">explore</Button> my music
         </FlowText>
+        <FlowText>
+          <Button to="/christmas-recital-2020">watch</Button> the Christmas recital 🎅❄️🎵🎹
+        </FlowText>
         {/* <FlowText> */}
         {/*   <Button to="/blog">read</Button> my blog */}
         {/* </FlowText> */}

@@ -1,5 +1,6 @@
 @import "../css/variables";
 
+// reset
 *,
 *::before,
 *::after {
@@ -17,10 +18,12 @@ body {
   overflow-y: auto;
 }
 
+// general page
 html {
   scroll-behavior: smooth;
 }
 
+// general styling
 body {
   background-color: $gray2;
   font-family: "Lato", sans-serif;
@@ -36,6 +39,15 @@ a {
     text-decoration: underline;
   }
 }
+
+p {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 1.5em;
+  color: $gray7;
+}
+
 
 #site-container {
   display: flex;

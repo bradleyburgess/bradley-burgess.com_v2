@@ -8,7 +8,7 @@ import "./layout.scss"
 
 const Layout = ({ children }) => {
   const [sidebarActive, setSidebarActive] = useState(false)
-  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
+  const [windowSize, setWindowSize] = useState({ width: 1024, height: 0 })
 
   useEffect(() => {
     const updateSize = () => {

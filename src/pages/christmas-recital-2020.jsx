@@ -57,6 +57,7 @@ const Index = ({ data, img }) => {
           noHover
           to="#"
           style={{ fontSize: 14, marginLeft: "0.75em", marginRight: "0.75em" }}
+          marginRight="0.75em"
         >
           next
         </Button>{" "}

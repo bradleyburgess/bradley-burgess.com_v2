@@ -1,5 +1,6 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import FlowText from "../FlowText"
 import Img from "gatsby-image"
 import Section from "../Section"
 import { ReactComponent as Arrow } from "../../icons/noun_curved arrow_547362.svg"
@@ -18,16 +19,27 @@ const Welcome = () => {
     }
   `)
   return (
-    <Section>
-      <WelcomeText />
-      <Img fluid={data.file.childImageSharp.fluid} />
-    </Section>
+    <>
+      <Section>
+        <WelcomeText />
+        <Img fluid={data.file.childImageSharp.fluid} />
+      </Section>
+      <Section>
+        <FlowText>
+          <span className={styles.new}>NEW! </span>
+          <Link to="/christmas-recital-2020">
+            Watch the 2020 Christmas recital here
+          </Link>{" "}
+          🎅❄️🎵🎹
+        </FlowText>
+      </Section>
+    </>
   )
 }
 
 const WelcomeText = () => (
   <div className={styles.welcomeTextContainer}>
-    <Arrow className={styles.arrow}/>
+    <Arrow className={styles.arrow} />
     <p className={styles.text}>
       Welcome to the music page! Watch my YouTube videos, listen to my
       SoundCloud tracks, and more.

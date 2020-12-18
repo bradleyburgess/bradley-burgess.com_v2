@@ -1,5 +1,5 @@
 ---
-path: /test-post
+slug: /test-post
 date: 2020-12-18T18:27:06.993Z
 title: Test post
 ---

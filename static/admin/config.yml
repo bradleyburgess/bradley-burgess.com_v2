@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: bradleyburgess/bradley-burgess.com_v2
+  branch: main
 media_folder: static/assets
 public_folder: /assets
 collections:

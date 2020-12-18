@@ -7,12 +7,12 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/music/*`] },
+      options: { prefixes: [`/music/*`, `/christmas-recital-2020/*`] },
     },
-    {
-      resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/christmas-recital-2020/*`] },
-    },
+    // {
+    //   resolve: `gatsby-plugin-create-client-paths`,
+    //   options: { prefixes: [`/christmas-recital-2020/*`] },
+    // },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -24,7 +24,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `christmas-recital-2020`,
+        name: `content`,
         path: `${__dirname}/content/`,
       },
     },

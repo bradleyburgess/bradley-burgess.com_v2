@@ -41,16 +41,20 @@ const Index = ({ data, img }) => {
   return (
     <Section>
       <Img fluid={img} className={styles.graphic} />
-      <P>
+      <p>
         Welcome to my 2020 Christmas Recital! There is such a breadth of
         wonderful music that has been written over the ages for the Advent and
         Christmas season. I didn't want to allow cancelled and modified events
         due to COVID-19 to prevent me from sharing the music that I so enjoy
         playing at this time of the year. I am delighted that you can join me
-        for a 22-minute program of some of my favorite Christmas organ works —
+        for a 25-minute program of some of my favorite Christmas organ works —
         all based on familiar carols.
-      </P>
-      <P>
+      </p>
+      <p>
+        The recital was recorded December 12<sup>th</sup>–15<sup>th</sup>, 2020,
+        at Edenton Street United Methodist Church in Raleigh, N.C.
+      </p>
+      <p>
         You can listen to the program one item at a time with notes by clicking
         the{" "}
         <Button
@@ -66,7 +70,7 @@ const Index = ({ data, img }) => {
           music-only playlist on my YouTube Channel
         </a>
         .
-      </P>
+      </p>
       <h2 style={{ clear: "both" }}>Program</h2>
       <ol className={styles.list}>
         {data.map((item, index) => (

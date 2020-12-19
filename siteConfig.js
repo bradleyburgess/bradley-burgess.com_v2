@@ -12,7 +12,7 @@ const menu = [
   {
     title: "blog",
     slug: "/blog",
-    status: "coming-soon",
+    status: "active",
   },
   // {
   //   title: "contact",

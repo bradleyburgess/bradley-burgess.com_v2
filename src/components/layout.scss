@@ -40,14 +40,16 @@ a {
   }
 }
 
-p {
+p,
+ul,
+ol {
+  margin-bottom: 1.5em;
+  padding-right: 1rem;
   font-family: "Lato", sans-serif;
   line-height: 1.5;
   font-size: 16px;
-  margin-bottom: 1.5em;
   color: $gray7;
 }
-
 
 #site-container {
   display: flex;
@@ -96,4 +98,3 @@ p {
 }
 
 // generic list
-

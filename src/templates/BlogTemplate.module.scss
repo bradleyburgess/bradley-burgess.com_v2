@@ -5,7 +5,7 @@
   font-size: 2em;
   font-weight: 600;
   color: $gray9;
-  margin-bottom: 0.25rem;
+  margin-bottom: 5px;
 }
 
 .category {
@@ -37,16 +37,37 @@
     color: $blue;
     text-transform: lowercase;
     font-weight: 500;
+    break-inside: avoid;
   }
 }
 
 .post {
+  ul,
+  ol {
+    margin-left: 3rem;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
   deckgo-highlight-code {
     line-height: 1.5;
     margin-bottom: 2rem;
+    code {
+      overflow: auto;
+      word-wrap: normal;
+      white-space: pre;
+    }
     @media screen and (max-width: 1023px) {
       margin-right: 1rem;
       margin-left: 1rem;
     }
   }
+}
+
+code {
+  font-size: 0.9em;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  background-color: $gray2;
 }

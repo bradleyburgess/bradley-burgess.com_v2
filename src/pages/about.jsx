@@ -74,20 +74,20 @@ export default function AboutPage() {
           For music notation, I use the wonderfully powerful (and open-source){" "}
           <a href="https://lilypond.org/">LilyPond</a>
         </P>
-        {/* <div className={styles.callToAction}> */}
-        {/*   <FlowText> */}
-        {/*     <Button inline to="/"> */}
-        {/*       read */}
-        {/*     </Button>{" "} */}
-        {/*     my blog */}
-        {/*   </FlowText> */}
+        <div className={styles.callToAction}>
+          <FlowText>
+            <Button inline to="/blog">
+              read
+            </Button>{" "}
+            my blog
+          </FlowText>
         {/*   <FlowText> */}
         {/*     <Button inline to="/"> */}
         {/*       see */}
         {/*     </Button>{" "} */}
         {/*     my work */}
         {/*   </FlowText> */}
-        {/* </div> */}
+        </div>
       </Section>
     </Layout>
   )

@@ -33,11 +33,14 @@ export default function BlogTemplate({
       <h3 className={styles.title}>{frontmatter.title}</h3>
       <h4 className={styles.meta}>
         <span className={styles.date}>{frontmatter.date}</span>
+        {/*
         {frontmatter.tags && <span className={styles.divider}> / </span>}
-        {frontmatter.tags &&
-          frontmatter.tags.map(tag => (
-            <span className={styles.tag}>#{tag} </span>
-          ))}
+          {frontmatter.tags && (
+          <span className={styles.tag}>
+          {frontmatter.tags.map(tag => `#${tag} `)}
+            </span>
+        )}
+        */}
       </h4>
       <div
         className={styles.post}

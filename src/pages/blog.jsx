@@ -34,13 +34,14 @@ const BlogPostListItem = ({ item }) => (
       <span className={styles.date}>{item.frontmatter.date}</span>
       <span className={styles.divider}> / </span>
       <span className={styles.category}>{item.frontmatter.category}</span>
-      {item.frontmatter.tags && <span className={styles.divider}> / </span>}
-      {item.frontmatter.tags &&
-        item.frontmatter.tags.map((tag, i, arr) => (
-          <span className={styles.tag} key={tag}>
-            #{tag}{" "}
+      {/*
+        {item.frontmatter.tags && <span className={styles.divider}> / </span>}
+        {item.frontmatter.tags && (
+        <span className={styles.tag}>
+        {item.frontmatter.tags.map((tag, i, arr) => `#${tag} `)}
           </span>
-        ))}
+      )}
+      */}
     </h4>
     <p className={styles.excerpt}>
       {item.excerpt}{" "}

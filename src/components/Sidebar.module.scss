@@ -83,6 +83,7 @@ $spacing: 2rem;
 .nav-list {
   margin-top: $spacing;
   margin-bottom: $spacing;
+  ul { padding: 0; }
 }
 
 .copyright {

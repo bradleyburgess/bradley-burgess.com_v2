@@ -1,0 +1,62 @@
+@import "./variables";
+
+.list {
+  list-style-type: none;
+}
+
+.list-item {
+}
+
+.title {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.15em;
+  color: $gray9;
+  font-weight: 600;
+  a {
+    color: inherit;
+    font-weight: inherit;
+    transition: $standard-transition;
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+
+.date {
+  color: $gray7;
+}
+
+.meta {
+  margin-bottom: 0.5rem;
+  span {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  .tag {
+    color: $blue;
+    text-transform: lowercase;
+    font-weight: 500;
+  }
+
+  .category {
+    color: $orange;
+  }
+
+  .divider {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    color: $gray6;
+    font-weight: inherit;
+  }
+}
+
+.excerpt {
+  a {
+    margin-left: 0.5em;
+  }
+}

@@ -1,0 +1,52 @@
+@import "../css/variables";
+
+.title {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: $gray9;
+  margin-bottom: 0.25rem;
+}
+
+.category {
+  font-weight: 400;
+  color: $orange;
+}
+
+.meta {
+  margin-bottom: 0.5rem;
+  span {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  .date {
+    color: $gray7;
+  }
+
+  .divider {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    color: $gray6;
+    font-weight: inherit;
+  }
+
+  .tag {
+    color: $blue;
+    text-transform: lowercase;
+    font-weight: 500;
+  }
+}
+
+.post {
+  deckgo-highlight-code {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 1023px) {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}

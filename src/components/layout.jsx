@@ -42,7 +42,10 @@ const Layout = ({ children }) => {
       )}
       <div id="site-container">
         <div id="sidebar-container">
-          <Sidebar onMenuItemClick={handleMenuItemClick} active={sidebarActive} />
+          <Sidebar
+            onMenuItemClick={handleMenuItemClick}
+            active={sidebarActive}
+          />
         </div>
         <div id="content">
           <main>{children}</main>

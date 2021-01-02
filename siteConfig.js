@@ -27,7 +27,7 @@ const menu = [
   {
     title: "christmas recital 2020",
     slug: "/christmas-recital-2020",
-    status: "new",
+    status: "active",
   },
 ]
 

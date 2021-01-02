@@ -26,7 +26,6 @@ const Welcome = () => {
       </Section>
       <Section>
         <FlowText>
-          <span className={styles.new}>NEW! </span>
           <Link to="/christmas-recital-2020">
             Watch the 2020 Christmas recital here
           </Link>{" "}

@@ -56,6 +56,7 @@ export const query = graphql`
       filter: {
         sourceInstanceName: { eq: "content" }
         relativeDirectory: { eq: "blog" }
+        childMarkdownRemark: { frontmatter: { draft: { eq: false } } }
       }
       sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
       limit: 1000
@@ -65,6 +66,7 @@ export const query = graphql`
           excerpt(truncate: true)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
+            draft
             slug
             title
             category

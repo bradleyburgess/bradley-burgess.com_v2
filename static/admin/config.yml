@@ -11,6 +11,7 @@ collections:
     create: true
     fields:
       - { name: slug, label: Slug }
+      - { name: draft, label: Draft, widget: boolean, default: true }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: category, label: Category }

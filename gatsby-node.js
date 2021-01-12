@@ -26,6 +26,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           childMarkdownRemark {
             frontmatter {
               date(formatString: "MMMM DD, YYYY")
+              draft
               slug
               title
             }
@@ -43,13 +44,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allFile.nodes.forEach(node => {
-    createPage({
-      path: `/blog/${node.childMarkdownRemark.frontmatter.slug}`,
-      component: blogPostTemplate,
-      context: {
-        // additional data can be passed via context
-        slug: node.childMarkdownRemark.frontmatter.slug,
-      },
-    })
+    if (!node.childMarkdownRemark.frontmatter.draft)
+      createPage({
+        path: `/blog/${node.childMarkdownRemark.frontmatter.slug}`,
+        component: blogPostTemplate,
+        context: {
+          // additional data can be passed via context
+          slug: node.childMarkdownRemark.frontmatter.slug,
+        },
+      })
   })
 }

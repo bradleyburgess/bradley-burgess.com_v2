@@ -1,5 +1,6 @@
 --- 
 slug: detecting-window-dimensions-react
+draft: false
 date: 2020-12-19T00:49:34.760Z
 title: Detecting window dimensions in React
 category: dev

@@ -1,6 +1,6 @@
 ---
 slug: grocery-app-part1
-draft: true
+draft: false
 date: 2021-04-09T20:59:39.562Z
 title: Grocery App, part. 1
 category: dev

@@ -5,7 +5,6 @@ date: 2021-04-09T20:59:39.562Z
 title: Grocery App, part. 1
 category: dev
 ---
-# Grocery Buddy pt. 1
 
 You always hear and read about the importance of building projects in the learning process for new developers. I believe it makes sense to do projects that I would use or feel there is a need for, and so I decided that a good idea would be to make a __grocery list app__.
 

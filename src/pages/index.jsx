@@ -28,17 +28,14 @@ const IndexPage = ({ data }) => {
 
       <div id="call-to-action" className={styles.callToAction}>
         <FlowText>
-          <Button to="/about">learn</Button> more about me
+          <Button to="/about" inline>learn</Button> more about me
         </FlowText>
         <FlowText>
-          <Button to="/music">explore</Button> my music
+          <Button to="/music" inline>explore</Button> my music
         </FlowText>
         <FlowText>
-          <Button to="/christmas-recital-2020">watch</Button> the Christmas recital 🎅❄️🎵🎹
+          <Button to="/blog" inline>read</Button> my blog
         </FlowText>
-        {/* <FlowText> */}
-        {/*   <Button to="/blog">read</Button> my blog */}
-        {/* </FlowText> */}
       </div>
     </Layout>
   )

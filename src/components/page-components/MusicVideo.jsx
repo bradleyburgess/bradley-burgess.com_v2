@@ -74,7 +74,7 @@ const videoList = [
   {
     title: 'Improvisation: "Let everything that has breath"',
     duration: "2:25",
-    url: "https://www.youtube.com/embed/QTCYr53x64Q&list=PLxwU2G1FQnySW4-SWaU4p7Qj0qhFUz8SD&index=3"
+    url: "https://www.youtube.com/embed/QTCYr53x64Q"
   }
 ]
 

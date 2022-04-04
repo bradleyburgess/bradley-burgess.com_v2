@@ -1,10 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import P from "../P"
 import Section from "../Section"
 import SubHeading from "../SubHeading"
-import YoutubeEmbed from "../YoutubeEmbed"
 import styles from "./MusicBio.module.scss"
 
 const MusicBio = () => {
